@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Push_Swap",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/push_swap_debug",
+            "args": ["1", "2", "3", "5", "22", "55", "554", "1000", "900"]
+            "cwd": "${workspaceFolder}",
+            "MIMode": "lldb",
+            "preLaunchTask": "make debug" // This will run your make debug command before starting the debugger
+        }
+    ]
+}
