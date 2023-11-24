@@ -6,7 +6,7 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 13:07:19 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/13 13:48:49 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/23 09:51:09 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ t_stack_node	*ft_stacknew(int content)
 	if (!return_struct)
 		return (NULL);
 	return_struct->prev = NULL;
+	return_struct->stack_a_link = NULL;
 	return_struct->content = content;
 	return_struct->next = NULL;
 	return (return_struct);

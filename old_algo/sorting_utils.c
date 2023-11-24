@@ -6,7 +6,7 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:06:22 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/16 15:25:49 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/20 11:20:19 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,3 @@ void	push_b_to_a(t_stack_node **stack_a, t_stack_node **stack_b)
 	}
 }
 
-void	swap_stack(t_stack_node **stack_a, char *stack)
-{
-	swap(stack_a);
-	ft_printf("%s\n", stack);
-}
