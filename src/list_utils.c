@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 13:07:19 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/13 13:48:49 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/23 09:51:09 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ t_stack_node	*ft_stacknew(int content)
 	if (!return_struct)
 		return (NULL);
 	return_struct->prev = NULL;
+	return_struct->stack_a_link = NULL;
 	return_struct->content = content;
 	return_struct->next = NULL;
 	return (return_struct);
