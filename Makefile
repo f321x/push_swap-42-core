@@ -6,13 +6,13 @@
 #    By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 10:42:39 by ***REMOVED***             #+#    #+#              #
-#    Updated: 2023/11/23 20:25:41 by ***REMOVED***            ###   ########.fr        #
+#    Updated: 2023/11/24 12:42:07 by ***REMOVED***            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	:= push_swap
 CC		:= cc
-# CFLAGS	:= -Wall -Werror -Wextra -Wunreachable-code-return
+CFLAGS	:= -Wall -Werror -Wextra -Wunreachable-code-return
 DFLAGS 	:= -g
 
 LIBPRINTF := ./libs/printf

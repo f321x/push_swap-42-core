@@ -6,7 +6,7 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 13:11:45 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/23 14:56:41 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/24 10:53:56 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,7 +73,7 @@ void	link_nodes(t_stack_node *stack_a, t_stack_node *stack_b)
 			stack_a = stack_a->next;
 		}
 		if (stack_b->stack_a_link == NULL)
-			stack_b->stack_a_link = stack_a_start;
+			stack_b->stack_a_link = smallest_content_node(stack_a_start);
 		stack_b = stack_b->next;
 	}
 }
