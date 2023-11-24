@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 12:46:54 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/23 14:52:33 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/24 10:49:34 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ typedef struct s_stack_node {
 	size_t	index;
 	size_t	distance;
 	bool	over_median;
-	bool	shortest_distance;
 	struct	s_stack_node *prev;
 	struct	s_stack_node *next;
 	struct	s_stack_node *stack_a_link;
@@ -77,6 +76,7 @@ t_stack_node	*set_shortest_distance(t_stack_node *stack_b);
 void			insert_node(t_stack_node **stack_a, t_stack_node **stack_b,
 					t_stack_node *node_to_push);
 void			sort_stack(t_stack_node **stack_a);
+t_stack_node	*smallest_content_node(t_stack_node *stack);
 
 // stack_utils.c
 size_t	stack_size(t_stack_node *stack);

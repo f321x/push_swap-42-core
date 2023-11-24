@@ -6,13 +6,13 @@
 #    By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 10:42:39 by fbock             #+#    #+#              #
-#    Updated: 2023/11/23 20:25:41 by fbock            ###   ########.fr        #
+#    Updated: 2023/11/24 12:42:07 by fbock            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	:= push_swap
 CC		:= cc
-# CFLAGS	:= -Wall -Werror -Wextra -Wunreachable-code-return
+CFLAGS	:= -Wall -Werror -Wextra -Wunreachable-code-return
 DFLAGS 	:= -g
 
 LIBPRINTF := ./libs/printf
