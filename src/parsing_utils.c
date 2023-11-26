@@ -6,7 +6,7 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 17:09:50 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/10 13:03:51 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:28:12 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ bool	check_duplicate(t_stack_node *stack_start, int value)
 
 void	error_and_kill(char *msg, void *ptr_to_free, void **dptr_t_f)
 {
-	void **dptr_to_free_start;
+	void	**dptr_to_free_start;
 
 	dptr_to_free_start = dptr_t_f;
 	ft_printf("%s\n", msg);
