@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 12:46:57 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/24 12:48:16 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:28:23 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ int	main(int argc, char **argv)
 	free_all_nodes(&stack_a_start);
 	return (0);
 }
-
 
 // ./push_swap 2 5 4 8 -2147483649
 

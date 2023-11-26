@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 12:46:54 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/24 10:49:34 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:27:28 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void			free_all_nodes(t_stack_node **list);
 t_stack_node	*check_and_allocate(char **argv);
 char			*combine_arguments(char **argv);
 char			**format_args(char *combined_args);
-t_stack_node	*populate_stack(char **numbers);
+t_stack_node	*populate_stack(char **numbers, size_t number_index);
 
 // parsing_utils.c
 bool	check_duplicate(t_stack_node *stack_start, int value);

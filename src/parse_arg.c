@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:19:23 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/24 12:43:30 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:27:15 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,17 @@
 
 t_stack_node	*check_and_allocate(char **argv)
 {
-	t_stack_node *stack_a;
-	char	*combined_args;
-	char	**formatted_args;
-	char	**formatted_args_start;
+	t_stack_node	*stack_a;
+	char			*combined_args;
+	char			**formatted_args;
+	char			**formatted_args_start;
 
 	combined_args = combine_arguments(argv);
 	if (!combined_args)
 		error_and_kill("Error", NULL, NULL);
 	formatted_args = format_args(combined_args);
 	free(combined_args);
-	stack_a = populate_stack(formatted_args);
+	stack_a = populate_stack(formatted_args, 0);
 	formatted_args_start = formatted_args;
 	while (*formatted_args != NULL)
 	{
@@ -68,7 +68,7 @@ char	*combine_arguments(char **argv)
 
 char	**format_args(char *combined_args)
 {
-	char **splitted_args;
+	char	**splitted_args;
 	size_t	string;
 	size_t	character;
 
@@ -83,8 +83,8 @@ char	**format_args(char *combined_args)
 		{
 			if (!ft_isdigit(splitted_args[string][character++]))
 				error_and_kill("Error", (void **)splitted_args, NULL);
-			if ((!(splitted_args[string][character]) &&
-				(splitted_args[string][character - 1] == '-')) ||
+			if ((!(splitted_args[string][character])
+				&& (splitted_args[string][character - 1] == '-')) ||
 				(splitted_args[string][character - 1] == '+'))
 				error_and_kill("Error", (void **)splitted_args, NULL);
 		}
@@ -93,14 +93,12 @@ char	**format_args(char *combined_args)
 	return (splitted_args);
 }
 
-t_stack_node	*populate_stack(char **numbers)
+t_stack_node	*populate_stack(char **numbers, size_t number_index)
 {
-	t_stack_node 	*new_stack;
+	t_stack_node	*new_stack;
 	t_stack_node	*buffer;
 	int				number;
-	size_t			number_index;
 
-	number_index = 0;
 	new_stack = ft_stacknew(ft_atoi(numbers[number_index++]));
 	if (!new_stack)
 		error_and_kill("Error", NULL, (void **)numbers);

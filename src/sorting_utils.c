@@ -6,19 +6,19 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:06:22 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/24 10:58:15 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:31:25 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	rev_r(t_stack_node **stack, char* stack_name)
+void	rev_r(t_stack_node **stack, char *stack_name)
 {
 	reverse_rotate(stack);
 	ft_printf("%s\n", stack_name);
 }
 
-void	push_to_stack(t_stack_node **source, t_stack_node **dest, char* name)
+void	push_to_stack(t_stack_node **source, t_stack_node **dest, char *name)
 {
 	push(source, dest);
 	ft_printf("%s\n", name);

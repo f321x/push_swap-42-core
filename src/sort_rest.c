@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 16:30:25 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/23 14:52:02 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/24 22:14:16 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,3 @@ void	sort_rest_3_a(t_stack_node **stack_a)
 // 	if ((*stack_b)->content < (*stack_b)->next->content)
 // 		swap_stack(stack_b, "sb");
 // }
-
-

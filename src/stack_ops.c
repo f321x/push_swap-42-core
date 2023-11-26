@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 10:18:55 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/13 13:33:03 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:29:54 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 */
 bool	push(t_stack_node **src, t_stack_node **dst)
 {
-	t_stack_node *new;
+	t_stack_node	*new;
 
 	if (!(*src))
 		return (false);
@@ -35,7 +35,7 @@ bool	push(t_stack_node **src, t_stack_node **dst)
 */
 void	pop(t_stack_node **stack)
 {
-	t_stack_node *buffer;
+	t_stack_node	*buffer;
 
 	if (stack && *stack)
 	{
@@ -54,8 +54,8 @@ void	pop(t_stack_node **stack)
 */
 void	swap(t_stack_node **stack)
 {
-	t_stack_node *first;
-	t_stack_node *second;
+	t_stack_node	*first;
+	t_stack_node	*second;
 
 	if (!stack || !(*stack) || !((*stack)->next))
 		return ;
@@ -76,8 +76,8 @@ void	swap(t_stack_node **stack)
 */
 void	rotate(t_stack_node **stack)
 {
-	t_stack_node *last_node;
-	t_stack_node *first_node;
+	t_stack_node	*last_node;
+	t_stack_node	*first_node;
 
 	if (!stack || !(*stack) || !(*stack)->next)
 		return ;
@@ -96,7 +96,7 @@ void	rotate(t_stack_node **stack)
 */
 void	reverse_rotate(t_stack_node **stack)
 {
-	t_stack_node *last_node;
+	t_stack_node	*last_node;
 
 	if (!stack || !(*stack) || !(*stack)->next)
 		return ;

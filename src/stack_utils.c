@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 10:12:57 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/17 12:47:22 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/26 23:30:03 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,4 +82,3 @@ bool	check_sorted(t_stack_node *stack, size_t amount)
 	}
 	return (true);
 }
-

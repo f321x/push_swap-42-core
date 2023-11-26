@@ -6,13 +6,13 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/23 13:11:45 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/24 10:53:56 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/24 22:16:33 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void set_links_null(t_stack_node *stack)
+void	set_links_null(t_stack_node *stack)
 {
 	while (stack)
 	{
@@ -66,9 +66,9 @@ void	link_nodes(t_stack_node *stack_a, t_stack_node *stack_b)
 		while (stack_a)
 		{
 			if ((stack_a->content > stack_b->content
-				&& stack_b->stack_a_link == NULL) || ((stack_a->content >
-				stack_b->content && stack_b->stack_a_link->content
-				> stack_a->content)))
+					&& stack_b->stack_a_link == NULL) || ((stack_a->content
+						> stack_b->content && stack_b->stack_a_link->content
+						> stack_a->content)))
 				stack_b->stack_a_link = stack_a;
 			stack_a = stack_a->next;
 		}
