@@ -6,16 +6,11 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 12:46:57 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/27 13:04:03 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/27 13:17:51 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void	leak_checker(void)
-{
-	system("leaks push_swap");
-}
 
 int	main(int argc, char **argv)
 {
@@ -34,6 +29,11 @@ int	main(int argc, char **argv)
 }
 
 // ./push_swap 2 5 4 8 -2147483649
+
+// void	leak_checker(void)
+// {
+// 	system("leaks push_swap");
+// }
 
 // atexit(leak_checker);
 
