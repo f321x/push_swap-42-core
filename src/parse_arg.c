@@ -6,7 +6,7 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:19:23 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/27 13:12:00 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/27 13:15:10 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,9 @@ char	**format_args(char *combined_args)
 		if (ft_strlen(splitted_args[string]) > 11)
 			error_and_kill(NULL, (void **)splitted_args);
 		character = 0;
-		if (!ft_isnumeric(splitted_args[string]) ||
-			(ft_atoi(splitted_args[string]) < INT_MIN) ||
-			(ft_atoi(splitted_args[string]) > INT_MAX))
+		if (!ft_isnumeric(splitted_args[string])
+			|| (ft_atoi(splitted_args[string]) < INT_MIN)
+			|| (ft_atoi(splitted_args[string]) > INT_MAX))
 		{
 			error_and_kill(NULL, (void **)splitted_args);
 		}
