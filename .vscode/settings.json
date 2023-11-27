@@ -22,6 +22,7 @@
 		"regex": "c",
 		"set": "c",
 		"stack": "c",
-		"utility": "c"
+		"utility": "c",
+		"chrono": "c"
 	}
 }

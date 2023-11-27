@@ -6,7 +6,7 @@
 /*   By: ***REMOVED*** <***REMOVED***@student.***REMOVED***.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/13 12:06:22 by ***REMOVED***             #+#    #+#             */
-/*   Updated: 2023/11/26 23:31:25 by ***REMOVED***            ###   ########.fr       */
+/*   Updated: 2023/11/27 10:09:42 by ***REMOVED***            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ void	rev_r(t_stack_node **stack, char *stack_name)
 	ft_printf("%s\n", stack_name);
 }
 
-void	push_to_stack(t_stack_node **source, t_stack_node **dest, char *name)
+void	push_to_stack(t_stack_node **src, t_stack_node **dst, char *n)
 {
-	push(source, dest);
-	ft_printf("%s\n", name);
+	push(src, dst);
+	ft_printf("%s\n", n);
 }
 
 void	rotate_stack(t_stack_node **stack, char *stack_name)
