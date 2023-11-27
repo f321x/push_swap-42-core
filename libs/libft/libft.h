@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 14:21:15 by fbock             #+#    #+#             */
-/*   Updated: 2023/10/11 17:33:28 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/27 12:54:22 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdbool.h>
 
 typedef struct s_list
 {
@@ -22,7 +23,8 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-int			ft_atoi(const char *str);
+bool		ft_isnumeric(char *string);
+long long	ft_atoi(const char *str);
 void		ft_bzero(void *s, size_t n);
 void		*ft_calloc(size_t num, size_t size);
 int			ft_isalnum(int c);

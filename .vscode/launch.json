@@ -6,7 +6,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/push_swap_debug",
-            "args": ["10", "9", "8", "7", "6", "5", "4", "3", "2", "1"],
+            "args": ["-2147483649"],
             "cwd": "${workspaceFolder}",
             "MIMode": "lldb",
             "preLaunchTask": "make debug" // This will run your make debug command before starting the debugger

@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fbock <fbock@student.42.fr>                +#+  +:+       +#+        */
+/*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 08:05:01 by fbock             #+#    #+#             */
-/*   Updated: 2023/10/06 10:31:08 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/27 10:18:41 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(const char *str)
+long long	ft_atoi(const char *str)
 {
-	int	integer;
-	int	seen_sign;
+	long long	integer;
+	int			seen_sign;
 
 	integer = 0;
 	seen_sign = 1;
@@ -34,5 +34,5 @@ int	ft_atoi(const char *str)
 		integer = integer * 10 + (*str - '0');
 		str++;
 	}
-	return (integer * seen_sign);
+	return (integer * (long long)seen_sign);
 }

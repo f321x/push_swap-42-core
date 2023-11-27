@@ -1,21 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isnumeric.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 16:43:15 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/27 13:00:36 by fbock            ###   ########.fr       */
+/*   Created: 2023/11/27 12:53:07 by fbock             #+#    #+#             */
+/*   Updated: 2023/11/27 13:14:07 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+bool	ft_isnumeric(char *string)
 {
-	if ((c >= '0' && c <= '9'))
-		return (1);
+	if (*string == '-' || *string == '+')
+		string++;
+	if (*string == '\0')
+		return (false);
+	while (ft_isdigit(*string))
+		string++;
+	if (*string == '\0')
+		return (true);
 	else
-		return (0);
+		return (false);
 }
