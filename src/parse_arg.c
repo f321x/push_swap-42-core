@@ -6,7 +6,7 @@
 /*   By: fbock <fbock@student.42heilbronn.de>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:19:23 by fbock             #+#    #+#             */
-/*   Updated: 2023/11/27 13:12:00 by fbock            ###   ########.fr       */
+/*   Updated: 2023/11/27 13:15:10 by fbock            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,9 +83,9 @@ char	**format_args(char *combined_args)
 		if (ft_strlen(splitted_args[string]) > 11)
 			error_and_kill(NULL, (void **)splitted_args);
 		character = 0;
-		if (!ft_isnumeric(splitted_args[string]) ||
-			(ft_atoi(splitted_args[string]) < INT_MIN) ||
-			(ft_atoi(splitted_args[string]) > INT_MAX))
+		if (!ft_isnumeric(splitted_args[string])
+			|| (ft_atoi(splitted_args[string]) < INT_MIN)
+			|| (ft_atoi(splitted_args[string]) > INT_MAX))
 		{
 			error_and_kill(NULL, (void **)splitted_args);
 		}
